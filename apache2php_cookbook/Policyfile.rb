@@ -4,13 +4,13 @@
 # https://docs.chef.io/policyfile.html
 
 # A name that describes what the system you're building with Chef does.
-name 'nginxphp'
+name 'apache2php'
 
 # Where to find external cookbooks:
 default_source :supermarket
 
 # run_list: chef-client will run these recipes in the order specified.
-run_list 'nginxphp::default'
+run_list 'apache2php::default'
 
 # Specify a custom source for a single cookbook:
-cookbook 'nginxphp', path: '.'
+cookbook 'apache2php', path: '.'
